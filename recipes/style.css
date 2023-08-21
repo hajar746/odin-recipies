@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #fff8e7;
+  background-color: #faf0d9;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -24,9 +24,11 @@ h2 p,
   margin: 15px;
 }
 
-li {
+li,
+h2 p {
   text-align: center;
   padding: 5px;
+  font-size: 17px;
 }
 
 .food-imgs {
@@ -51,6 +53,14 @@ li {
   margin-bottom: 8px;
 }
 
+.description {
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  margin: 0 auto;
+  height: max-content;
+}
+
 .recipe {
   text-decoration: none;
   font-size: 30px;
@@ -69,11 +79,10 @@ li {
   justify-content: space-around;
 }
 
-.desc,
-.ingr,
-.steps {
+.sec-recipe {
   border: 2px solid brown;
   margin: 45px 100px;
   padding: 20px;
   list-style-position: inside;
+  background-color: #fff8e7;
 }

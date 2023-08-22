@@ -55,10 +55,8 @@ h2 p {
 
 .description {
   display: flex;
-  justify-content: space-around;
-  width: fit-content;
-  margin: 0 auto;
-  height: max-content;
+  justify-content: center;
+  margin: 10px 20px;
 }
 
 .recipe {
@@ -80,9 +78,22 @@ h2 p {
 }
 
 .sec-recipe {
-  border: 2px solid brown;
-  margin: 45px 100px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style-position: inside;
   background-color: #fff8e7;
+  flex-grow: 1;
+}
+
+section.steps {
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff8e7;
+  margin-bottom: 10px;
+}
+.steps li {
+  display: flex;
 }

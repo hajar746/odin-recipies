@@ -5,40 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="recipes/style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <h1>Odin Recipes</h1>
-    <section class="section">
-      <img
-        src="recipes/food-imgs/pizza.jpg"
-        alt="pizza-recipe"
-        class="food-imgs"
-      />
-      <p><a href="recipes/pizza.html" class="recipe">Cheese Pizza</a></p>
-    </section>
-    <section class="section">
-      <img
-        src="recipes/food-imgs/fries.jpg"
-        alt="fries-recipe"
-        class="food-imgs"
-      />
-      <p>
-        <a href="recipes/crispy-french-fries.html" class="recipe"
-          >Crispy French Fries</a
-        >
-      </p>
-    </section>
-    <section class="section">
-      <img
-        src="recipes/food-imgs/ramen.jpg"
-        alt="ramen-recipe"
-        class="food-imgs"
-      />
-      <p>
-        <a href="recipes/sweet-n-spicy-ramen.html" class="recipe"
-          >Sweet N Spicy Ramen</a
-        >
-      </p>
-    </section>
+ <header>
+  <h1>Odin Recipes</h1>
+  <div class="hamburger">
+    <img src="recipes/food-imgs/hamburger.png" alt="toggle"  class="hamburger">
+  </div>
+  <nav>
+    <ul class="nav_links">
+      <li>
+        <form action="" class="search-bar">
+          <input type="text" id="search" placeholder="search recipes" name="q">
+          <button type="submit"><img src="recipes/food-imgs/search.png" alt="search button"></button>
+        </li>
+        </form>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+ </header>
+    
+
+    <div class="recipe-box">
+      <section class="recipe-card">
+        <img
+          src="recipes/food-imgs/pizza.jpg"
+          alt="pizza-recipe"
+          class="food-imgs"
+        />
+        <p><a href="recipes/pizza.html" class="recipe-name">Cheese Pizza</a></p>
+      </section>
+      <section class="recipe-card">
+        <img
+          src="recipes/food-imgs/fries.jpg"
+          alt="fries-recipe"
+          class="food-imgs"
+        />
+        <p>
+          <a href="recipes/crispy-french-fries.html" class="recipe-name"
+            >Crispy French Fries</a
+          >
+        </p>
+      </section>
+      <section class="recipe-card">
+        <img
+          src="recipes/food-imgs/ramen.jpg"
+          alt="ramen-recipe"
+          class="food-imgs"
+        />
+        <p>
+          <a href="recipes/sweet-n-spicy-ramen.html" class="recipe-name"
+            >Sweet N Spicy Ramen</a
+          >
+        </p>
+      </section>
+    </div>
   </body>
 </html>

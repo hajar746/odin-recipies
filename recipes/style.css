@@ -8,7 +8,6 @@
 
 body {
   min-height: 100vh;
-  background: url(food-imgs/background2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -16,6 +15,8 @@ body {
 /* HEADER */
 
 header {
+  height: 480px;
+  padding-top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +26,7 @@ header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   z-index: 10000;
 }
-h1 {
+header h1 {
   cursor: pointer;
 }
 .nav_links {
@@ -58,11 +59,12 @@ h1 {
 
 .search-bar input {
   background: transparent;
-  flex: 2;
   border: 0;
   outline: none;
   padding: 16px 20px;
   font-size: 20px;
+  width: 500px;
+  flex: 1;
 }
 ::placeholder {
   color: rgba(0, 0, 0, 0.5);
@@ -87,6 +89,28 @@ h1 {
   position: absolute;
   top: 0.55rem;
   right: 1rem;
+}
+
+/* LANDING PAGE */
+.landing-pg {
+  background: url(food-imgs/background2.jpg) no-repeat;
+  background-size: cover;
+  height: 480px;
+  padding-top: 80px;
+}
+h1.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  margin-right: 360px;
+  font-size: 3rem;
+}
+
+.arrow {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  margin-right: auto;
 }
 
 h2,
@@ -126,8 +150,10 @@ h2 p {
   margin: 10px 20px;
 }
 
-div.recipe-box {
+.section-recipe-box {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .recipe-name {
@@ -139,7 +165,6 @@ div.recipe-box {
 
 .recipe-card {
   margin: 10px 15px;
-  text-align: start;
 }
 
 .images {
@@ -147,10 +172,9 @@ div.recipe-box {
   justify-content: space-around;
 }
 
-img.food-imgs {
-  height: auto;
-  width: 400px;
-  border: 2px solid brown;
+.food-imgs {
+  height: 200px;
+  border: 2px solid #dd9787;
 }
 
 .sec-recipe {
@@ -200,5 +224,12 @@ ol.list {
 
   .nav_links.active {
     display: flex;
+  }
+}
+
+@media (max-width: 1040px) {
+  .search-bar input {
+    width: 230px;
+    transition: width 0.4s ease-in;
   }
 }

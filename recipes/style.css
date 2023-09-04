@@ -14,7 +14,7 @@ body {
 
 /* HEADER */
 
-header {
+.nav {
   height: 480px;
   padding-top: 80px;
   display: flex;
@@ -26,6 +26,13 @@ header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   z-index: 10000;
 }
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(33, 92, 6, 0.8);
+  width: 100%;
+}
+
 header h1 {
   cursor: pointer;
 }
@@ -174,6 +181,7 @@ h1.title {
   text-align: center;
   padding: 10px;
 }
+
 h3,
 h2 p,
 .desc {

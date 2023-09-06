@@ -185,13 +185,65 @@ h1.title {
 /* RECIPE PAGE */
 .recipe-page-title {
   text-align: center;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .recipe-page-header {
-  display: flex;
-  justify-content: space-around;
+  height: 100vh;
+  font-size: 20px;
 }
+.recipe-page-header p {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+.recipe-ing {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.recipe-page-img {
+  height: 400px;
+  width: 290px;
+  border: 2px solid #678d58;
+}
+.recipe-ing ul li,
+.recipe-steps ol li {
+  align-self: center;
+  padding: 5px 0px;
+  height: fit-content;
+}
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 24px;
+}
+span.ingr-needed {
+  font-weight: 600;
+}
+span.for {
+  color: #678d58;
+}
+.recipe-steps ol {
+  text-align: start;
+  padding: 20px;
+  line-height: 34px;
+  padding: 30px;
+  margin: 0 20px;
+}
+.recipe-steps ol li {
+  list-style: none;
+  font-size: 20px;
+}
+.recipe-steps span {
+  font-size: 30px;
+  color: #678d58;
+}
+
 #btn-all {
   background-color: black;
   color: #fff8e7;
@@ -201,6 +253,7 @@ h1.title {
   padding: 10px;
   margin-bottom: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .button {

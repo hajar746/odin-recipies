@@ -29,7 +29,7 @@ body {
 
 .nav.sticky {
   position: fixed;
-  background-color: rgba(33, 92, 6, 0.8);
+  background-color: rgba(75, 124, 53, 0.8);
 
   margin-top: 0px;
 }
@@ -131,7 +131,58 @@ h1.title {
   left: 760px;
 }
 
-/* POPULAR RECIPES PAGE */
+/* LATEST RECIPES SECTION */
+.latest-recipe-page {
+  min-height: 500px;
+}
+h2 {
+  padding-top: 60px;
+  padding-left: 500px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  margin-left: 500px;
+  gap: 10px;
+  width: 600px;
+  background-color: #fff8e7;
+}
+.slider-img {
+  height: 320px;
+  width: 240px;
+}
+.slide-descrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.slide-title {
+  text-align: start;
+}
+.slide-descrip p {
+  line-height: 25px;
+}
+
+.btn-view {
+  font-size: 20px;
+  background-color: #a6c48a;
+  color: black;
+  padding: 12px 15px;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.btn-view:hover {
+  background-color: #bcd6a3;
+}
+
+/* POPULAR RECIPES SECTION */
 .chilli {
   display: inline-block;
   height: 3rem;
@@ -148,6 +199,7 @@ h1.title {
 
 .section-popular {
   min-height: 700px;
+  background-color: #fff8e7;
 }
 
 .section-pop-recipes {
@@ -182,7 +234,7 @@ h1.title {
   transition: all 0.4s ease-out;
 }
 
-/* RECIPE PAGE */
+/* RECIPE PAGES */
 .recipe-page-title {
   text-align: center;
   padding-top: 40px;

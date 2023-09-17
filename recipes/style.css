@@ -176,7 +176,7 @@ h2 {
 .slider {
   position: relative;
   height: 400px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .slide {
   position: absolute;

@@ -110,6 +110,8 @@ const slider = function () {
   });
 };
 
+slider();
+
 // Revealing sections on scroll
 const sections = document.querySelectorAll(".section");
 //removing hidden class from sections

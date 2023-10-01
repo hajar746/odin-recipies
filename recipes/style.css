@@ -179,7 +179,6 @@ h2 {
   overflow: hidden;
 }
 .slide {
-  position: absolute;
   display: flex;
   justify-content: center;
   margin-left: 460px;
@@ -421,6 +420,14 @@ span.for {
   .nav_links.active {
     display: flex;
   }
+
+  .slide {
+    margin-left: 30px;
+  }
+
+  .fork {
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -441,5 +448,25 @@ span.for {
   .title,
   .pie {
     transition: all 0.4s ease-in;
+  }
+
+  .slide {
+    margin-left: 90px;
+  }
+
+  .slide-btn {
+    display: none;
+  }
+
+  .dots {
+    transform: translate(320%);
+  }
+
+  .section-pop-recipes {
+    flex-direction: column;
+  }
+
+  .fork {
+    margin-left: 200px;
   }
 }
